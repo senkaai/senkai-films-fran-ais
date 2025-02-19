@@ -1,4 +1,6 @@
 $(document).ready(function () {
+    const apiUrl = 'https://your-vercel-deployment-url/api';
+    
     function loadMovies(templateSelector) {
         const goodNote = $('#goodNote').val();
         const badNote = $('#badNote').val();
