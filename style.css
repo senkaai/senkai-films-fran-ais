@@ -1,0 +1,285 @@
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.fade-in {
+    animation: fadeIn 1s ease-in-out;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-image: url('img/4wpK.gif');
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+    color: white;
+    animation: fadeIn 1s ease-in-out;
+}
+
+h1 {
+    color: #fff;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px #333;
+    animation: fadeIn 1s ease-in-out;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.buttonsChoice,
+.range-container,
+.filter-container,
+.movies-grid,
+form {
+    animation: fadeIn 1s ease-in-out;
+}
+
+.buttonsChoice {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+button {
+    font-size: 16px;
+    padding: 10px 20px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    margin: 5px;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+button:hover {
+    background-color: #e0e0e0;
+    transform: scale(1.05);
+}
+
+#loadMoviesButton {
+    background-color: rosybrown;
+    color: white;
+}
+
+#loadMoviesButton:hover {
+    background-color: #333;
+}
+
+#importBanger {
+    background-color: gold;
+    color: white;
+}
+
+#importBanger:hover {
+    background-color: #333;
+}
+
+#importNavets {
+    background-color: brown;
+    color: white;
+}
+
+#importNavets:hover {
+    background-color: #333;
+}
+
+#clearButton {
+    background-color: #6c757d;
+    color: white;
+}
+
+#addMovieButton {
+    background-color: cornflowerblue;
+    color: white;
+}
+
+#addMovieButton:hover {
+    background-color: #333;
+}
+
+#clearButton:hover {
+    background-color: brown;
+}
+
+.filter-container {
+    margin: 20px 0;
+    text-align: center;
+}
+
+.filter-container label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.filter-container select {
+    padding: 5px;
+    font-size: 16px;
+}
+
+.range-container {
+    margin: 20px 0;
+    text-align: center;
+    position: relative;
+}
+
+.range-labels {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    padding: 0 20px;
+}
+
+.range-labels span {
+    flex: 1;
+    text-align: center;
+    position: relative;
+    top: -2.5px;
+    left: -10px;
+}
+
+.range-container input[type="range"] {
+    width: 90%;
+    margin: 0 auto;
+    display: block;
+}
+
+.movies-grid {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.movie-card,
+.movie-card_banger {
+    width: 250px;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    border: 2px solid #000;
+    transition: transform 0.3s ease;
+}
+
+.movie-card:hover,
+.movie-card_banger:hover {
+    transform: scale(1.05);
+}
+
+.movie-card img,
+.movie-card_banger img {
+    width: 100%;
+    height: auto;
+    border-bottom: 2px solid #000;
+}
+
+.movie-card .content,
+.movie-card_banger .content {
+    padding: 15px;
+    text-align: left;
+}
+
+.movie-card h2,
+.movie-card_banger h2 {
+    font-size: 1.5em;
+    margin: 0;
+    color: #333;
+}
+
+.movie-card p,
+.movie-card_banger p {
+    font-size: 1em;
+    margin: 5px 0;
+    color: #666;
+}
+
+.movie-card .rating,
+.movie-card_banger .rating {
+    font-weight: bold;
+    color: #e67e22;
+}
+
+.delete-button {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 10px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.delete-button:hover {
+    background-color: darkred;
+    transform: scale(1.05);
+}
+
+form {
+    background: #f9f9f9;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    max-width: 400px;
+    margin: 20px auto;
+    text-align: left;
+}
+
+form h2 {
+    margin-top: 0;
+    color: #333;
+    text-align: center;
+}
+
+form label {
+    display: block;
+    margin: 10px 0 5px;
+    color: #333;
+    font-weight: normal;
+}
+
+form input,
+form textarea {
+    width: calc(100% - 20px);
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-size: 14px;
+}
+
+form input:focus,
+form textarea:focus {
+    border-color: #999;
+    outline: none;
+}
+
+form button {
+    width: 100%;
+    background-color: cornflowerblue;
+    color: white;
+    font-size: 14px;
+    padding: 10px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: cornflowerblue;
+}

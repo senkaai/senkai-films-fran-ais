@@ -1,0 +1,153 @@
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.fade-in {
+    animation: fadeIn 1s ease-in-out;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+    text-align: center;
+    margin: 20px;
+}
+
+h1 {
+    color: white;
+}
+
+.movies-grid {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.movie-card_banger {
+    width: 250px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    border: 2px solid yellow;
+    animation: fadeIn 1s ease-in-out;
+    /* Apply animation */
+}
+
+.movie-card_banger img {
+    width: 75%;
+    height: auto;
+}
+
+.movie-card_banger .content {
+    padding: 15px;
+    text-align: left;
+}
+
+.movie-card_banger h2 {
+    font-size: 1.2em;
+    margin: 0;
+    color: #333;
+}
+
+.movie-card_banger p {
+    font-size: 0.9em;
+    margin: 5px 0;
+    color: #666;
+}
+
+.movie-card_banger .rating {
+    font-weight: bold;
+    color: #e67e22;
+}
+
+#FiltrePays {
+    margin-top: 50px;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+    width: 200px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    position: absolute;
+    top: 20px;
+    right: 100px;
+}
+
+#FiltrePays:hover {
+    background-color: #f0f0f0;
+}
+
+#FiltrePays:focus {
+    outline: none;
+    border-color: #007BFF;
+    background-color: #e9f6ff;
+}
+
+#FiltrePays option {
+    padding: 10px;
+    font-size: 16px;
+}
+
+#totalDifference {
+    font-size: 18px;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+.movie-card,
+.movie-card_banger {
+    background: rgba(0, 0, 0, 0.35);
+    border-radius: 10px;
+    padding: 20px;
+    color: #fff;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.15);
+    animation: fadeIn 1s ease-in-out;
+    /* Apply animation */
+}
+
+.movie-card .content,
+.movie-card_banger .content {
+    background: rgba(0, 0, 0, 0.35);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.movie-card .nom,
+.movie-card_banger .nom,
+.movie-card .description,
+.movie-card_banger .description,
+.movie-card .realisateur,
+.movie-card_banger .realisateur,
+.movie-card .note,
+.movie-card_banger .note,
+.movie-card .notePublic,
+.movie-card_banger .notePublic,
+.movie-card_banger .noteDifference,
+.movie-card .noteDifference .movie-card .compagnie,
+.movie-card_banger .compagnie {
+    color: #fff;
+}
+
+.movie-card:hover,
+.movie-card_banger:hover {
+    background: rgba(0, 0, 0, 0.8);
+}
+
+.movie-card img,
+.movie-card_banger img {
+    border-radius: 10px;
+    max-width: 100%;
+    height: auto;
+}
