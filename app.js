@@ -1,5 +1,5 @@
 $(document).ready(function () {
-    const apiUrl = 'https://your-vercel-deployment-url/api';
+    const apiUrl = 'https://backend-3c77aotjo-senkaais-projects.vercel.app';
     
     function loadMovies(templateSelector) {
         const goodNote = $('#goodNote').val();
